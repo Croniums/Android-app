@@ -32,17 +32,8 @@
         android:textSize="20sp" />
 
     <FrameLayout
-        android:id="@+id/frameLayout"
         android:layout_width="match_parent"
-        android:layout_height="400dp">
+        android:layout_height="match_parent"
+        android:id="@+id/frame_layout"/>
 
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/fragmentContainerView7"
-            android:name="com.example.androidapp.BlankFragment"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:layout="@layout/fragment_blank"
-            android:layout_marginTop="200dp"/>
-
-    </FrameLayout>
 </RelativeLayout>

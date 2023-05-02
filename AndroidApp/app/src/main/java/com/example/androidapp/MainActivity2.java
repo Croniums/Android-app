@@ -1,6 +1,7 @@
 package com.example.androidapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,6 +21,9 @@ public class MainActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+
+        Fragment fragment = new Map_Frag();
+        getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout,fragment).commit();
 
 
         btn_close = (Button)findViewById(R.id.close_activity);
